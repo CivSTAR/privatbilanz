@@ -1,12 +1,16 @@
 # privatbilanz
 Little project to practise html, css, js, php, mysql
 
-14.08.2020
+# 23.08.2020
+## Worked on 
+Framework: PHP
 
-[FINISHED]
+user: register account, login, recover password, logout
 
-- Projektidee skizziert
+# 14.08.2020
+## [FINISHED]
 
-[IN PROGRESS]
+- sketch project idea
+## [IN PROGRESS]
 
-- Erstellung der Page-Templates
+- Creating templates
