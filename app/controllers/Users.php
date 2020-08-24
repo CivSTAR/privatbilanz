@@ -6,7 +6,7 @@
 
         public function register() {
             // Only run if user is not logged in
-            if($this->isLoggedIn()) {
+            if(isLoggedIn()) {
                 redirect('pages/index');
             }
             // Set the data
@@ -65,7 +65,7 @@
                         flash('register_success', 'You are now registered and can log in');
                         redirect('users/login');
                     } else {
-                        flash('register_failure', 'Something went wrong, please try again');
+                        flash('register_failure', 'Something went wrong, please try again', 'alert alert-failure');
                         redirect('users/register');
                     }
                 }
@@ -78,7 +78,7 @@
 
         public function login() {
             // Only run if user is not logged in
-            if($this->isLoggedIn()) {
+            if(isLoggedIn()) {
                 redirect('pages/index');
             }
             // Set the data
@@ -129,7 +129,7 @@
             $_SESSION['user_id'] = $user->id;
             $_SESSION['user_email'] = $user->email;
             $_SESSION['user_name'] = $user->name;
-            redirect('pages/index');
+            redirect('balances/index');
         }
 
         public function logout() {
@@ -140,12 +140,10 @@
             redirect('users/login');
         }
 
-        public function isLoggedIn() {
-            return isset($_SESSION['user_id']);
-        }
+        
 
         public function recoverPassword() {
-            if($this->isLoggedIn()) {
+            if(isLoggedIn()) {
                 redirect('pages/index');
             }
             // Set the data
@@ -203,7 +201,7 @@
         }
 
         public function verifyRecover($verification = '') {
-            if($this->isLoggedIn()) {
+            if(isLoggedIn()) {
                 redirect('pages/index');
             }
             // Check if verification is not empty

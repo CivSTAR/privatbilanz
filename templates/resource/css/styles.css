@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #FFF;
+    color: #111;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 250%;
+}
+
+h2 {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 140%;
+}
+
+.long-text {
+  margin-top: 20px;
+}
+
+/*----------- LINKS------------*/
+
+a:link,
+a:visited {
+    color: #2256e6;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #2256e6;
+    transition: border-bottom 0.2s, border 0.2s, color 0.2s;
+}
+a:hover,
+a:active {
+    color: #4a527e;
+    border-bottom: 1px solid transparent;
+}
+
+/*-----------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-----------------------------------------------------*/
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto 0 auto;
+}
+
+section {
+  padding: 0;
+}
+
+/*-----------------------------------------------------*/
+/* LOGINBOX */
+/*-----------------------------------------------------*/
+
+.loginbox {
+  min-width: 300px;
+  width: 500px;
+  margin: auto;
+}
+
+.loginbox-top {
+  background-color: cornflowerblue;
+  color: #fff;
+  border: 3px solid #000;
+}
+
+.loginbox-content {
+  border-left: 3px solid #000;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000;
+}
+
+.formlist {
+  text-align: center;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.formlist-input {
+  width: 85%;
+  border: 2px solid #000;
+  padding: 5px 5px;
+  margin-bottom: 5px;
+}
+
+.formlist-button {
+  background-color: cornflowerblue;
+  border: 2px solid #000;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 5px;
+}
+
+.formlist-select {
+  width: 85%;
+  border: 2px solid #000;
+  padding: 5px 5px;
+  margin-bottom: 5px;
+}
+
+/*-----------------------------------------------------*/
+/* LOGININFOBOX */
+/*-----------------------------------------------------*/
+
+.logininfobox {
+  min-width: 300px;
+  width: 500px;
+  margin: auto;
+}
+
+.logininfobox p {
+  padding-top: 20px;
+  font-size: 80%;
+  text-align: center;
+}
+
+/*-----------------------------------------------------*/
+/* LOGGED IN */
+/*-----------------------------------------------------*/
+
+nav {
+  width: 800px;
+  height: 40px;
+  margin: auto;
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/*-----------------------------------------------------*/
+/* BILANZ */
+/*-----------------------------------------------------*/
+
+.bilanz {
+  width: 1000px;
+  margin: 0 auto 10px auto;
+}
+
+.aktiva {
+  float: left;
+  width: 50%;
+}
+
+.bilanzbox {
+  width: 90%;  
+  margin-bottom: 10px;
+}
+
+.bilanzbox-aktiva {
+  background-color: #0d6118;
+  color: #fff;
+  border: 3px solid #000;  
+}
+
+.bilanzbox-passiva {
+  background-color: #610d0d;
+  color: #fff;
+  border: 3px solid #000;
+}
+
+.bilanzbox-eigenkapital {
+  background-color: #b15d0e;
+  color: #fff;
+  border: 3px solid #000;
+}
+
+.bilanzbox-content {
+  border-left: 3px solid #000;
+  border-bottom: 3px solid #000;
+  border-right: 3px solid #000; 
+}
+
+.bilanzbox-liste {
+  list-style: none;
+}
+
+.bilanzbox-element {
+  width: 100%;
+}
+
+.bilanzbox-element-content {
+  width: 100%;
+}
+
+.bilanzbox-element-desc {
+  float: left;
+  width: 80%;
+}
+
+.bilanzbox-element-value {
+  float: right;
+  width: 20%;
+}
+
+.bilanzbox-element-value p {
+  text-align: right;
+}
+
+.passiva {
+  float: right;
+  width: 50%;
+}
+
+.bilanz-final {
+  width: 1000px;
+  margin: -10px auto 20px auto;
+}
+
+.bilanz-final-content {
+  width: 90%;
+  color: #fff;
+  border: 3px solid #000;
+}
+
+.bilanz-final-desc {
+  float: left;
+  width: 80%;
+  font-size: 120%;
+}
+
+.bilanz-final-value {
+  float: right;
+  width: 20%;
+  font-size: 120%;
+}
+
+.bilanz-final-value p {
+  text-align: right;
+}
+
+.aktiva-final {
+  float: left;
+  width: 50%;
+}
+
+.aktiva-final .bilanz-final-content {
+  background-color: #0d6118;
+}
+
+.passiva-final {
+  float: right;
+  width: 50%;
+}
+
+.passiva-final .bilanz-final-content {
+  background-color: #610d0d;
+}
+
+/*-----------------------------------------------------*/
+/* FOOTER */
+/*-----------------------------------------------------*/
+
+footer p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 85%;
+}

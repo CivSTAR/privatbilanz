@@ -5,7 +5,7 @@
                 <p><a href="account">Mein Account</a></p>
             </li>
             <li>
-                <p><a href="../users/logout">Logout</a></p>
+                <p><a href="<?php echo URLROOT; ?>/users/logout">Logout</a></p>
             </li>
         </ul>
     </nav>
