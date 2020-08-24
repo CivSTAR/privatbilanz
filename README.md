@@ -1,16 +1,17 @@
 # privatbilanz
 Little project to practise html, css, js, php, mysql
 
+# 24.08.2020
+## Worked on
++ balance: show, add, edit and delete items
+
 # 23.08.2020
 ## Worked on 
-Framework: PHP
-
-user: register account, login, recover password, logout
++ Framework: PHP
++ Database: mysql
++ user: register account, login, recover password, logout
 
 # 14.08.2020
-## [FINISHED]
-
-- sketch project idea
-## [IN PROGRESS]
-
-- Creating templates
+## Worked on
++ sketch project idea
++ Creating templates
