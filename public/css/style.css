@@ -220,7 +220,7 @@ nav li {
   border: 1px solid #000;
 }
 
-.bilanzbox-eigenkapital {
+.bilanzbox-equity {
   background-color: #b15d0e;
   color: #fff;
   border: 1px solid #000;
@@ -246,17 +246,49 @@ nav li {
 
 .bilanzbox-element-desc {
   float: left;
-  width: 80%;
+  width: 70%;
 }
 
 .bilanzbox-element-value {
   float: right;
-  width: 20%;
+  width: 30%;
 }
 
 .bilanzbox-element-value p {
   text-align: right;
 }
+
+a.item-edit--btn,
+a.item-delete--btn {
+  font-size: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  display: none;
+}
+
+a.item-edit--btn {
+  color: #6adb5b;
+}
+
+a.item-delete--btn {
+  color: #ca4f4f;
+}
+
+a.item-edit--btn:focus,
+a.item-edit--btn:link,
+a.item-edit--btn:visited { outline: none; }
+a.item-edit--btn:active { transform: translateY(2px); }
+a.item-delete--btn:focus,
+a.item-delete--btn:link,
+a.item-delete--btn:focus { outline: none; }
+a.item-delete--btn:active { transform: translateY(2px); }
+
+.bilanzbox-element:hover .item-delete--btn { display: inline; }
+.bilanzbox-element:hover .item-edit--btn { display: inline; }
 
 .passiva {
   float: right;
@@ -276,13 +308,13 @@ nav li {
 
 .bilanz-final-desc {
   float: left;
-  width: 80%;
+  width: 70%;
   font-size: 120%;
 }
 
 .bilanz-final-value {
   float: right;
-  width: 20%;
+  width: 30%;
   font-size: 120%;
 }
 
