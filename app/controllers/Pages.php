@@ -6,10 +6,7 @@
 
         public function index() {            
             // Set the data
-            $data = [
-                'title' => 'SharePosts',
-                'description' => 'Simple social network built on the PHP-MVC framework'
-            ];
+            $data = [];
             // Set the view
             $view = strtolower(__CLASS__) . '/index';
             // Load View
@@ -20,7 +17,7 @@
             // Set the data
             $data = [
                 'title' => 'About',
-                'description' => 'App to share posts with other users'
+                'description' => 'App to create a personal balance sheet'
             ];
             // Set the view
             $view = strtolower(__CLASS__) . '/about';

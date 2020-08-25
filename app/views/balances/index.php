@@ -17,7 +17,7 @@
                                     <div class="bilanzbox-element-desc">
                                         <p>
                                           <a href="<?php echo URLROOT; ?>/balances/edit/<?php echo $row->id; ?>" class="item-edit--btn">
-                                            <ion-icon name="create-outline"></ion-icon>
+                                            <ion-icon name="create-outline"></ion-icon>                                            
                                           </a>
                                           <?php echo $row->title; ?>
                                         </p>

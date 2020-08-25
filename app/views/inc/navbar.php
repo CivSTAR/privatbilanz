@@ -2,7 +2,10 @@
   <nav>
         <ul>
             <li>
-                <p><a href="account">Mein Account</a></p>
+                <p><a href="<?php echo URLROOT; ?>/balances/">balance sheet</a></p>
+            </li>
+            <li>
+                <p><a href="<?php echo URLROOT; ?>/accounts/">my account</a></p>
             </li>
             <li>
                 <p><a href="<?php echo URLROOT; ?>/users/logout">Logout</a></p>

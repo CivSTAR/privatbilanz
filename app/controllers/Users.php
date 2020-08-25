@@ -140,8 +140,6 @@
             redirect('users/login');
         }
 
-        
-
         public function recoverPassword() {
             if(isLoggedIn()) {
                 redirect('pages/index');
